@@ -26,7 +26,6 @@ html {
 }
 
 .calculator-screen {
-
     width: 100%;
     font-size: 5rem;
     height: 80px;
@@ -42,4 +41,17 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    border: 2px solid rgb(218, 255, 11);
+}
+
+button {
+    height: 60px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 30%;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 7px;
+    padding: 5px;
 }
