@@ -22,9 +22,6 @@ const Calculator = {
     prevTotal: null,
 
     parseInput(value) {
-        if (this.displayText === '0') {
-            this.displayText = ''
-        }
         //check if any 'special btns' have been clicked
         switch (value) {
             case '=':
@@ -39,7 +36,19 @@ const Calculator = {
                 } else; {
                     //add value to text str
                 }
-
+                break;
+            default:
+                //add value to text string
         }
-    }
+    },
+
+    addText(value) {
+        if (this.displayText === '0') {
+            this.displayText = ''
+        } else if (this.prevTotal !== null) {
+            this.displayText = this.prevTotal
+            this.prevTotal = null
+        }
+
+    },
 }
