@@ -33,12 +33,16 @@ const Calculator = {
             case '.':
                 if (this.displayText === 0) {
                     //pass str of '0. ' into add text method
+                    addText('0.')
                 } else; {
                     //add value to text str
+                    addText(value)
                 }
                 break;
             default:
                 //add value to text string
+                addText(value)
+                break;
         }
     },
 
@@ -59,4 +63,8 @@ const Calculator = {
         //output display text to screen
 
     },
+
+    outputText(text) {
+        document.querySelector('.calculator-screen').value = text;
+    }
 }
