@@ -9,11 +9,28 @@ keys.addEventListener('click', event => {
     } = target;
     if (!target.matches('button')) {
         return;
+        //exit function if user clicks on the calc body and not a btn
     } else {
         //pass value to parse method
-        console.log(event)
-        console.log(target)
-        console.log(value)
+        Calculator.parseInput(value)
     }
 
 })
+
+const Calculator = {
+    displayText: '0',
+    prevTotal: null,
+
+    parseInput(value) {
+        if (this.displayText === '0') {
+            this.displayText = ''
+        }
+        //check if any 'special btns' have been clicked
+        switch (value) {
+            case '=' {
+                //caluclate the answer when they click = sign
+                break;
+            }
+        }
+    }
+}
