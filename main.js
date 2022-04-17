@@ -49,6 +49,14 @@ const Calculator = {
             this.displayText = this.prevTotal
             this.prevTotal = null
         }
+        /*check if last char in display AND entered value are not nums*/
+        if (isNaN(+(value)) && isNaN(+(this.displayText))) {
+            if (isNaN(this.displayText.slice(-1))) {
+                return;
+            }
+        }
+        this.displayText += value
+        //output display text to screen
 
     },
 }
