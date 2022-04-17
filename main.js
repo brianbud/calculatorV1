@@ -27,10 +27,19 @@ const Calculator = {
         }
         //check if any 'special btns' have been clicked
         switch (value) {
-            case '=' {
+            case '=':
                 //caluclate the answer when they click = sign
                 break;
-            }
+            case 'AC':
+                //clear screen and stored values
+                break;
+            case '.':
+                if (this.displayText === 0) {
+                    //pass str of '0. ' into add text method
+                } else; {
+                    //add value to text str
+                }
+
         }
     }
 }
