@@ -36,7 +36,7 @@ const Calculator = {
                 if (this.displayText === 0) {
                     //pass str of '0. ' into add text method
                     this.addText('0.')
-                } else; {
+                } else {
                     //add value to text str
                     this.addText(value)
                 }
