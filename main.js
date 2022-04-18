@@ -33,15 +33,15 @@ const Calculator = {
             case '.':
                 if (this.displayText === 0) {
                     //pass str of '0. ' into add text method
-                    addText('0.')
+                    this.addText('0.')
                 } else; {
                     //add value to text str
-                    addText(value)
+                    this.addText(value)
                 }
                 break;
             default:
                 //add value to text string
-                addText(value)
+                this.addText(value)
                 break;
         }
     },
@@ -61,6 +61,7 @@ const Calculator = {
         }
         this.displayText += value
         //output display text to screen
+        this.outputText(this.displayText)
 
     },
 
