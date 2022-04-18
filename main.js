@@ -26,6 +26,7 @@ const Calculator = {
         switch (value) {
             case '=':
                 //caluclate the answer when they click = sign
+                this.calcAnswer(this.displayText)
                 break;
             case 'AC':
                 //clear screen and stored values
@@ -67,5 +68,10 @@ const Calculator = {
 
     outputText(text) {
         document.querySelector('.calculator-screen').value = text;
+    },
+
+    calcAnswer(equation) {
+        let result = Function("return " + equation)()
+        this.outputText(result)
     }
 }
