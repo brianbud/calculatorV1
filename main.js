@@ -30,6 +30,7 @@ const Calculator = {
                 break;
             case 'AC':
                 //clear screen and stored values
+                this.clearAll()
                 break;
             case '.':
                 if (this.displayText === 0) {
@@ -73,5 +74,11 @@ const Calculator = {
     calcAnswer(equation) {
         let result = Function("return " + equation)()
         this.outputText(result)
+    },
+
+    clearAll() {
+        this.displayText = '0',
+            this.prevTotal = null,
+            this.outputText(this.displayText)
     }
 }
