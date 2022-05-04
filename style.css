@@ -34,9 +34,13 @@ html {
     height: 80px;
     border: none;
     background-color: rgb(255, 255, 255);
+    box-shadow:
+        5px 5px 15px rgba(8, 8, 8, 0.5),
+        10px 10px 15px rgba(0, 0, 0, 0.12);
     color: black;
     text-align: right;
     padding-right: 10px;
+    border-radius: 5px;
 }
 
 .calculator-btns {
@@ -58,6 +62,10 @@ button {
     margin: 7px;
     padding: 5px;
     flex: 1 0 18%;
+    box-shadow:
+        -10px -10px 15px rgba(0, 2, 14, 0.5),
+        10px 10px 15px rgba(70, 70, 70, 0.12);
+    outline: none;
 }
 
 .all-clear {
