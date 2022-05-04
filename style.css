@@ -21,7 +21,8 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 400px;
-    background-color: black;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgb(45, 126, 233) 100%);
     padding: 40px;
     padding-top: 75px;
     border-radius: 25px;
@@ -32,7 +33,7 @@ html {
     font-size: 5rem;
     height: 80px;
     border: none;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
     text-align: right;
     padding-right: 10px;
@@ -49,7 +50,7 @@ html {
 button {
     height: 60px;
     color: black;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 30px;
     font-size: 4rem;
@@ -70,6 +71,6 @@ button {
 }
 
 button:hover {
-    background-color: rgb(182, 182, 182);
+    background-color: rgb(189, 189, 189);
     cursor: pointer;
 }
