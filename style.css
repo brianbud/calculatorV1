@@ -82,3 +82,9 @@ button:hover {
     background-color: rgb(189, 189, 189);
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    .calculator {
+        min-width: 400px;
+    }
+}
